@@ -1,3 +1,25 @@
 body {
   text-align:center;
+  font-family: 'Lora', serif;
+}
+
+img {
+  width: 10%;
+  height: 10%;
+  transform: rotate(-5deg);
+}
+
+#zip {
+  padding: 12px 28px;
+  border-radius: 4px;
+  width: 13%;
+  text-align: center;
+}
+
+.button {
+  background-color: gold;
+  padding: 12px 28px;
+  margin: .5em;
+  border-radius: 4px;
+  width: inherit;
 }
