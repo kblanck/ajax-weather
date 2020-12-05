@@ -1,6 +1,7 @@
 body {
   text-align:center;
   font-family: 'Lora', serif;
+
 }
 
 img {
@@ -22,4 +23,19 @@ img {
   margin: .5em;
   border-radius: 4px;
   width: inherit;
+}
+
+#modal {
+  background-color: #DC5539;
+  color: ghostwhite;
+	height: 60px;
+	width: 250px;
+	border-radius: 5px;
+  margin: 0 auto;
+	box-shadow: 0 4x 4x rgba(0,0,0,0.2);
+	padding: 2%;
+	line-height: 120%;
+  /* z-index: 2;
+  position: fixed; */
+  /* opacity: 85%; */
 }
