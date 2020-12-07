@@ -37,7 +37,7 @@ h1 {
   background-color: gold;
   width: 262px;
   padding: 12px 28px;
-  margin: .5em;
+  margin: .5 0 1em 0;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -81,6 +81,7 @@ h1 {
   background-color: gold;
   padding: 4px 10px;
   margin: .5em;
+  width: 100px;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -196,7 +197,7 @@ h1 {
     background-color: #FFFAFA;
     height: 50vh;
     width: 50vw;
-    padding: 1em 2em;
+    padding: 1em 3em;
     border: 10px solid #d6ecf3;
     border-radius: 8px;
     font-size: 1em;
@@ -205,16 +206,19 @@ h1 {
   }
   #modal-close {
     position: fixed;
+    margin-bottom: -25em;
+    margin-right: 3.5em;
     align-self: flex-end;
-    position: absolute;
     font-size: .75em;
     cursor: pointer;
   }
   #close {
+    position: fixed;
+    align-self: flex-end;
     background-color: gold;
+    width: 75px;
     padding: 4px 10px;
     border-radius: 4px;
-    cursor: pointer;
   }
   #onesie {
     height: 275px;
@@ -223,9 +227,18 @@ h1 {
     overflow: none;
   }
   #sleeping-bag {
+    margin: -2em 0 0 0;
+    padding: 0 0 .5em 0;
     height: 275px;
-    width: 180px;
+    width: 175px;
     transform: rotate(3deg);
+    overflow: none;
+  }
+  #down {
+    margin: -1.25em 0 .5em 0;
+    height: 220px;
+    width: 180px;
+    transform: rotate(-5deg);
     overflow: none;
   }
   #raincoat {
