@@ -23,7 +23,7 @@ $(() => {
     const $zip = $('#zip').val();
 
   $.ajax({
-    url: `http://api.openweathermap.org/data/2.5/weather?zip=${$zip},us&appid=7fa87af9efde6d7183d84d7ce869e1b2&units=imperial`,
+    url: `https://api.openweathermap.org/data/2.5/weather?zip=${$zip},us&appid=7fa87af9efde6d7183d84d7ce869e1b2&units=imperial`,
     type: "GET",
   }).then(
     (data) => {

@@ -213,7 +213,6 @@ h1 {
   #close {
     background-color: gold;
     padding: 4px 10px;
-    margin: .5em;
     border-radius: 4px;
     cursor: pointer;
   }
@@ -228,7 +227,6 @@ h1 {
     width: 180px;
     transform: rotate(3deg);
     overflow: none;
-    margin: .5em;
   }
   #raincoat {
     height: 275px;
