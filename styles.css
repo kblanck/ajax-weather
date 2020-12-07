@@ -37,7 +37,8 @@ h1 {
   background-color: gold;
   width: 262px;
   padding: 12px 28px;
-  margin: .5 0 1em 0;
+  margin-top: .5em;
+  margin-bottom: 1em;
   border-radius: 4px;
   cursor: pointer;
 }
