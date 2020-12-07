@@ -116,6 +116,14 @@ h1 {
   /* margin: .5em; */
 }
 
+#raincoat {
+  height: 300px;
+  width: 200px;
+  transform: rotate(3deg);
+  overflow: none;
+  margin: .5em;
+}
+
 #bomber {
   height: 200px;
   width: 220px;
@@ -195,6 +203,20 @@ h1 {
     text-align: center;
     box-shadow: 8px 8px 10px rgba(0,0,0,0.5);
   }
+  #modal-close {
+    position: fixed;
+    align-self: flex-end;
+    position: absolute;
+    font-size: .75em;
+    cursor: pointer;
+  }
+  #close {
+    background-color: gold;
+    padding: 4px 10px;
+    margin: .5em;
+    border-radius: 4px;
+    cursor: pointer;
+  }
   #onesie {
     height: 275px;
     width: 180px;
@@ -202,6 +224,13 @@ h1 {
     overflow: none;
   }
   #sleeping-bag {
+    height: 275px;
+    width: 180px;
+    transform: rotate(3deg);
+    overflow: none;
+    margin: .5em;
+  }
+  #raincoat {
     height: 275px;
     width: 180px;
     transform: rotate(3deg);
