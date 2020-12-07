@@ -2,7 +2,10 @@ $(() => {
 
   const $modalDiv = $('#modal').css('display', 'none');
   const $modalContentDiv = $('#modal-content');
-  // const $closeButton = $('#modal-close').append('button','Close')
+
+  // const rotate = () => {
+  //   $('#img1').css('display', 'block');
+  // }
 
   const openModal = () => {
     $modalDiv.css('display', 'flex');
@@ -13,6 +16,8 @@ $(() => {
     $('#modal').css('display', 'none');
     location.reload(true);
   })
+
+  // setTimeout(rotate(),5000);
 
   $('.button').on('click', (e) => {
 
@@ -65,7 +70,7 @@ $(() => {
         }
       },
     (error) => {
-      alert('This zip code is not recognized!');
+      // $modalContentDiv.append('Oops! This zip code is not recognized.')
     })
     }
   )
