@@ -11,7 +11,7 @@ $(() => {
 
   const closeModal = $('#modal-close').on('click', () => {
     $('#modal').css('display', 'none');
-    location.reload(true);
+    // location.reload(true);
   })
 
   $('.button').on('click', (e) => {
