@@ -4,6 +4,10 @@ body {
   background-color: #FAFAD2;
 }
 
+h1 {
+  font-size: 3em;
+}
+
 #hero-flex {
   position: absolute;
   top: 0;
@@ -16,21 +20,22 @@ body {
 }
 
 #front-coat {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   transform: rotate(-5deg);
-  padding-bottom: 1em;
+  padding-bottom: 1.5em;
 }
 
 #zip {
   padding: 12px 28px;
   border-radius: 4px;
-  width: 13%;
+  width: 15%;
   text-align: center;
 }
 
 .button {
   background-color: gold;
+  width: 21%;
   padding: 12px 28px;
   margin: .5em;
   border-radius: 4px;
@@ -48,32 +53,31 @@ body {
 }
 
 #modal-content {
+  position: fixed;
   display: flex;
-  flex-direction: column;
   align-items: center;
   align-content: space-around;
   justify-content: center;
   background-color: #FFFAFA;
   height: 50vh;
   width: 50vw;
-  /* padding: 1em 2em; */
+  padding: 1em 2em;
   border: 10px solid #d6ecf3;
   border-radius: 8px;
   font-size: 1.5em;
   text-align: center;
+  box-shadow: 8px 8px 10px rgba(0,0,0,0.5);
 }
 
 #modal-close {
+  position: fixed;
   align-self: flex-end;
+  position: absolute;
   font-size: .75em;
-  text-decoration: underline;
   cursor: pointer;
-  margin-bottom: -15em;
-  margin-left: -2em;
 }
 
 #close {
-  position: relative;
   background-color: gold;
   padding: 4px 10px;
   margin: .5em;
@@ -81,7 +85,148 @@ body {
   cursor: pointer;
 }
 
-img {
-  width: 40%;;
+#onesie {
+  height: 300px;
+  width: 200px;
+  transform: rotate(-8deg);
+  overflow: none;
+}
+
+#sleeping-bag {
+  height: 300px;
+  width: 200px;
   transform: rotate(3deg);
+  overflow: none;
+  margin: .5em;
+}
+
+#down {
+  height: 220px;
+  width: 180px;
+  transform: rotate(-5deg);
+  overflow: none;
+  margin: .5em;
+}
+
+#peacoat {
+  height: 220px;
+  width: 195px;
+  transform: rotate(-5deg);
+  overflow: none;
+  /* margin: .5em; */
+}
+
+#bomber {
+  height: 200px;
+  width: 220px;
+  transform: rotate(6deg);
+  overflow: none;
+  margin: .5em;
+}
+
+#denim {
+  height: 200px;
+  width: 220px;
+  transform: rotate(-5deg);
+  overflow: none;
+}
+
+#hoodie {
+  height: 200px;
+  width: 220px;
+  transform: rotate(-5deg);
+  overflow: none;
+}
+
+#t-shirt {
+  height: 200px;
+  width: 190px;
+  transform: rotate(-10deg);
+  overflow: none;
+}
+
+/* For mobile phones: */
+@media (max-width: 600px) {
+  h1 {
+    padding: 0 1em 0 1em;
+    text-align: center;
+  }
+  #hero-flex {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #zip {
+    width: 200px;
+    padding: 18px 36px;
+    font-size: 1.25em;
+  }
+  .button {
+    background-color: gold;
+    width: 275px;
+    padding: 18px 36px;
+    font-size: 1.25em;
+    margin: .5em;
+    border-radius: 4px;
+  }
+  #front-coat {
+    width: 200px;
+    height: 200px;
+    transform: rotate(-5deg);
+    padding-bottom: 1.5em;
+  }
+  #modal-content {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    justify-content: center;
+    background-color: #FFFAFA;
+    height: 50vh;
+    width: 50vw;
+    padding: 1em 2em;
+    border: 10px solid #d6ecf3;
+    border-radius: 8px;
+    font-size: 1em;
+    text-align: center;
+    box-shadow: 8px 8px 10px rgba(0,0,0,0.5);
+  }
+  #onesie {
+    height: 275px;
+    width: 180px;
+    transform: rotate(-8deg);
+    overflow: none;
+  }
+  #sleeping-bag {
+    height: 275px;
+    width: 180px;
+    transform: rotate(3deg);
+    overflow: none;
+    margin: .5em;
+  }
+  #denim {
+    height: 200px;
+    width: 220px;
+    transform: rotate(-5deg);
+    overflow: none;
+    margin-bottom: .5em;
+  }
+  #hoodie {
+    height: 200px;
+    width: 220px;
+    transform: rotate(-5deg);
+    overflow: none;
+    margin-bottom: 1em;
+  }
+  #t-shirt {
+    height: 200px;
+    width: 190px;
+    transform: rotate(-10deg);
+    overflow: none;
+    margin-bottom: .5em;
+  }
 }
