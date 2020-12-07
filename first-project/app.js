@@ -38,7 +38,7 @@ $(() => {
         } else if (temp > 39 && temp <= 49) {
           $modalContentDiv.append(`Not so bad! It feels like ${temp}° out there, so grab that wool coat.`);
         } else if (temp > 49 && temp <= 59) {
-          $modalContentDiv.append(`Oooh. In our opinion, ${temp}° is the PERFECT walking temp. Break out that bomber today!`).append('<img id="bomber" src="./imgs/bomber.png">');
+          $modalContentDiv.append('<img id="bomber" src="./imgs/bomber.png">').append(`Oooh. In our opinion, ${temp}° is the PERFECT walking temp. Break out that bomber today!`);
         } else if (temp > 59 && temp <= 68) {
           $modalContentDiv.append(`We love a balmy ${temp}°. All you need is a denim jacket today, honey!`);
         } else if (temp > 68 && temp <= 74) {
