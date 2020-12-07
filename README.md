@@ -1,4 +1,4 @@
-JACKET HOROSCOPE was created using HTML, CSS, and jQuery and can be found at https://kblanck.github.io/jacket-horoscope/.
+JACKET HOROSCOPE was created using HTML, CSS, JavaScript, and jQuery and can be found at https://kblanck.github.io/jacket-horoscope/.
 
 I pulled current weather data from the free API located at https://openweathermap.org/api. More specifically, I targeted the "feels like" temperature (Fahrenheit), and used if/else statements with temperature parameters to identify what kind of coat the app user might need. It was important to me to keep the options as unisex as possible, so I stayed away from (typically) gendered choices and went with options I thought most folks might have in their winter collection: a puffy coat, a denim jacket, a hoodie, etc.
 
