@@ -1,11 +1,11 @@
 body {
+  /* text-align:center; */
   font-family: 'Lora', serif;
   background-color: #FAFAD2;
 }
 
 h1 {
   font-size: 3em;
-  text-align: center;
 }
 
 #hero-flex {
@@ -79,7 +79,8 @@ h1 {
 }
 
 footer {
-  padding-top: 1.5em;
+  padding: 1.5em;
+}
 
 #modal {
   position: absolute;
@@ -195,13 +196,23 @@ footer {
 
 /* For mobile phones: */
 @media (max-width: 600px) {
-  
+  h1 {
+    padding: 0 1em 0 1em;
+    text-align: center;
+  }
+  #hero-flex {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
   #zip {
     width: 200px;
     padding: 18px 36px;
     font-size: 1.25em;
   }
-
   .button {
     background-color: gold;
     width: 275px;
