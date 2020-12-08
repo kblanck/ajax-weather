@@ -1,12 +1,10 @@
 $(() => {
 
+/* Sets variables for the modal div and the modal div to which contents will be appended:*/
   const $modalDiv = $('#modal').css('display', 'none');
   const $modalContentDiv = $('#modal-content');
 
-  // const rotate = () => {
-  //   $('#img1').css('display', 'block');
-  // }
-
+/*Defines the openModal and closeModal functions:*/
   const openModal = () => {
     $modalDiv.css('display', 'flex');
     $modalDiv.css('background-color', 'rgba(0,0,0,0.6)');
@@ -17,8 +15,7 @@ $(() => {
     location.reload(true);
   })
 
-  // setTimeout(rotate(),5000);
-
+/* Defines the action that takes place when the "See my jacket" button is clicked:*/
   $('.button').on('click', (e) => {
 
     e.preventDefault();
@@ -33,8 +30,6 @@ $(() => {
   }).then(
     (data) => {
       const temp = Math.round(data.main.feels_like);
-      // const rain = data.weather[0].main;
-      // console.log(data);
       const isItRaining = () => {
         if (data.weather[0].main == 'Rain'){
           console.log('Raining');
@@ -42,7 +37,7 @@ $(() => {
           console.log('Not raining');
         }
       }
-      isItRaining();
+      isItRaining(); /*This function was in use for a possible rain variable.*/
       if (temp <= 10) {
         $modalContentDiv.append('<img id="onesie" src="./imgs/onesie.png">').append(`Oh my God, it feels like ${temp}° outside. Stay inside and maybe wear this onesie.`)
       } else if (temp > 10 && temp <= 25) {
@@ -71,6 +66,7 @@ $(() => {
       },
     (error) => {
       // $modalContentDiv.append('Oops! This zip code is not recognized.')
+      /*I removed this error, as it was refreshing oddly on mobile devices. I have yet to figure out a better way to display errors to the users.*/
     })
     }
   )

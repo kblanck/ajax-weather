@@ -78,6 +78,9 @@ h1 {
   cursor: pointer;
 }
 
+footer {
+  padding: 1.5em;
+
 #modal {
   position: absolute;
   top: 0;
