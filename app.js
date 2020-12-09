@@ -56,14 +56,29 @@ $(() => {
           }
         } else if (temp > 49 && temp <= 59) {
           $modalContentDiv.append('<img id="bomber" src="./imgs/bomber.png">').append(`Oooh. In our opinion, ${temp}° is the PERFECT walking temp. Break out that bomber today!`);
+          { if (data.weather[0].main === 'Rain') {
+            $modalContentDiv.append(` And bring an umbrella.`);
+            }
+          }
         } else if (temp > 59 && temp <= 68) {
           $modalContentDiv.append('<img id="denim" src="./imgs/denim.png">').append(`We love a balmy ${temp}°. All you need is a denim jacket today, honey!`);
+          { if (data.weather[0].main === 'Rain') {
+            $modalContentDiv.append(` And bring an umbrella.`);
+            }
+          }
         } else if (temp > 68 && temp <= 74) {
           $modalContentDiv.append('<img id="hoodie" src="./imgs/hoodie.png">').append(`It's ${temp}° where you are?? Girl, all you need is a hoodie! Go enjoy your day!`);
+          { if (data.weather[0].main === 'Rain') {
+            $modalContentDiv.append(` And bring an umbrella!`);
+            }
+          }
         } else if (temp > 74 && temp <= 95) {
           $modalContentDiv.append('<img id="t-shirt" src="./imgs/t-shirt.png">').append(`Wow, at ${temp}°, winter is not known where you are. Throw on a T-shirt and enjoy your year-round summer!`);
         }
-      },
+        { if (data.weather[0].main === 'Rain') {
+          $modalContentDiv.append(` And bring an umbrella!`);
+          }
+        }
     (error) => {
       // $modalContentDiv.append('Oops! This zip code is not recognized.')
       /*I removed this error, as it was refreshing oddly on mobile devices. I have yet to figure out a better way to display errors to the users.*/
