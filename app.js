@@ -4,7 +4,7 @@ $(() => {
   const $modalDiv = $('#modal').css('display', 'none');
   const $modalContentDiv = $('#modal-content');
 
-/*Defines the openModal and closeModal functions:*/
+/* Event handlers */
   const openModal = () => {
     $modalDiv.css('display', 'flex');
     $modalDiv.css('background-color', 'rgba(0,0,0,0.6)');
