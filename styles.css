@@ -95,6 +95,7 @@ footer {
   width: 200px;
   transform: rotate(-8deg);
   overflow: none;
+  margin: .5em;
 }
 
 #sleeping-bag {
@@ -118,6 +119,7 @@ footer {
   width: 195px;
   transform: rotate(-5deg);
   overflow: none;
+  margin-bottom: .5em;
 }
 
 #raincoat {
