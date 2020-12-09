@@ -118,7 +118,6 @@ footer {
   width: 195px;
   transform: rotate(-5deg);
   overflow: none;
-  /* margin: .5em; */
 }
 
 #raincoat {
@@ -161,16 +160,7 @@ footer {
 /* For mobile phones: */
 @media (max-width: 600px) {
   h1 {
-    padding: 0 1em 0 1em;
     text-align: center;
-  }
-  #hero-flex {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
   }
   #zip {
     width: 200px;
@@ -188,26 +178,9 @@ footer {
   #front-coat {
     width: 200px;
     height: 200px;
-    transform: rotate(-5deg);
     padding-bottom: 1.5em;
   }
-  #modal-content {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: space-around;
-    justify-content: center;
-    background-color: #FFFAFA;
-    height: 50vh;
-    width: 50vw;
-    padding: 1em 3em;
-    border: 10px solid #d6ecf3;
-    border-radius: 8px;
-    font-size: 1em;
-    text-align: center;
-    box-shadow: 8px 8px 10px rgba(0,0,0,0.5);
-  }
+
   #modal-close {
     position: fixed;
     margin-bottom: -25em;
