@@ -79,7 +79,7 @@ $(() => {
           $modalContentDiv.append(` And bring an umbrella!`);
           }
         }
-      };
+      },
     (error) => {
       // $modalContentDiv.append('Oops! This zip code is not recognized.')
       /*I removed this error, as it was refreshing oddly on mobile devices. I have yet to figure out a better way to display errors to the users.*/
