@@ -23,6 +23,7 @@ $(() => {
     openModal();
 
     const $zip = $('#zip').val();
+    console.log($zip);
 
   $.ajax({
     url: `https://api.openweathermap.org/data/2.5/weather?zip=${$zip},us&appid=7fa87af9efde6d7183d84d7ce869e1b2&units=imperial`,
@@ -74,15 +75,18 @@ $(() => {
           }
         } else if (temp > 74 && temp <= 95) {
           $modalContentDiv.append('<img id="t-shirt" src="./imgs/t-shirt.png">').append(`Wow, at ${temp}°, winter is not known where you are. Throw on a T-shirt and enjoy your year-round summer!`);
+          { if (data.weather[0].main === 'Rain') {
+            $modalContentDiv.append(` And bring an umbrella!`);
+            }
         }
-        { if (data.weather[0].main === 'Rain') {
-          $modalContentDiv.append(` And bring an umbrella!`);
-          }
+      } else if (temp === NaN) {
+          $modalContentDiv.append(`This zip code doesn't exist!`);
+          console.log(`testing out temp`);
         }
       },
     (error) => {
-      // $modalContentDiv.append('Oops! This zip code is not recognized.')
-      /*I removed this error, as it was refreshing oddly on mobile devices. I have yet to figure out a better way to display errors to the users.*/
+      $modalContentDiv.append('Oops! This zip code is not recognized.')
+      // /*I removed this error, as it was refreshing oddly on mobile devices. I have yet to figure out a better way to display errors to the users.*/
     })
     }
   )
